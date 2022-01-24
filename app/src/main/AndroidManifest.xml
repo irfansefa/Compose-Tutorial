@@ -3,7 +3,7 @@
     package="com.moonstarit.composetutorial">
 
     <application
-        android:allowBackup="true"
+        android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -21,16 +21,11 @@
             </intent-filter>
         </activity>
         <activity
-        android:name=".JetPackComposeBasicsOne"
-        android:exported="true"
-        android:label="@string/app_name"
-        android:theme="@style/Theme.ComposeTutorial.NoActionBar">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+            android:name=".JetPackComposeBasicsOne"
+            android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
+        <activity
+            android:name=".JetpackComposeBasicsFour"
+            android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
     </application>
 
 </manifest>

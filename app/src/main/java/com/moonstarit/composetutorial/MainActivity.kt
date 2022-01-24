@@ -46,5 +46,13 @@ fun AllButtons(context: Context) {
         ) {
             Text(text = "01 Tutorial: Jetpack Compose basics")
         }
+        Button(
+            onClick = {
+                context.startActivity(JetpackComposeBasicsFour.createIntent(context))
+            },
+            modifier = Modifier.padding(8.dp),
+        ) {
+            Text(text = "04 Jetpack Compose basics")
+        }
     }
 }
