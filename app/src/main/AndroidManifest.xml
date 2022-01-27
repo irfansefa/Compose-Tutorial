@@ -26,6 +26,9 @@
         <activity
             android:name=".JetpackComposeBasicsFour"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
+        <activity
+            android:name=".JetPackComposeLayoutSix"
+            android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
     </application>
 
 </manifest>
