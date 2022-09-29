@@ -1,4 +1,4 @@
-package com.moonstarit.composetutorial
+package com.moonstarit.composetutorial.path.oneessentials
 
 import android.content.Context
 import android.content.Intent
@@ -36,6 +36,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import com.moonstarit.composetutorial.R
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
 
 

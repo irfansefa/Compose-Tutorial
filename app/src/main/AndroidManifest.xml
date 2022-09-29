@@ -22,13 +22,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".JetPackComposeBasicsOne"
+            android:name=".path.oneessentials.StarterPathOne"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
         <activity
-            android:name=".JetpackComposeBasicsFour"
+            android:name=".path.oneessentials.JetPackComposeBasicsOne"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
         <activity
-            android:name=".JetPackComposeLayoutSix"
+            android:name=".path.oneessentials.JetpackComposeBasicsFour"
+            android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
+        <activity
+            android:name=".path.oneessentials.JetPackComposeLayoutSix"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
     </application>
 

@@ -1,4 +1,4 @@
-package com.moonstarit.composetutorial
+package com.moonstarit.composetutorial.path.oneessentials
 
 object SampleData {
     // Sample conversation data

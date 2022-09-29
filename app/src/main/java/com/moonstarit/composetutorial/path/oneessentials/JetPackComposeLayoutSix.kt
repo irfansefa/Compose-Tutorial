@@ -1,4 +1,4 @@
-package com.moonstarit.composetutorial
+package com.moonstarit.composetutorial.path.oneessentials
 
 import android.content.Context
 import android.content.Intent
@@ -94,7 +94,7 @@ fun StaggeredGrid(
             .coerceIn(constraints.minHeight.rangeTo(constraints.maxHeight))
         val rowY = IntArray(rows) { 0 }
         for (i in 1 until rows) {
-            rowY[i] = rowY[i-1] + rowHeights[i-1]
+            rowY[i] = rowY[i - 1] + rowHeights[i - 1]
         }
 
         layout(width, height) {
@@ -111,6 +111,7 @@ fun StaggeredGrid(
         }
     }
 }
+
 @Composable
 fun Chip(modifier: Modifier = Modifier, text: String) {
     Card(
