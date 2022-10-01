@@ -25,13 +25,16 @@
             android:name=".path.oneessentials.StarterPathOne"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
         <activity
-            android:name=".path.oneessentials.JetPackComposeBasicsOne"
+            android:name=".path.oneessentials.C1ComposeBasics"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
         <activity
-            android:name=".path.oneessentials.JetpackComposeBasicsFour"
+            android:name=".path.oneessentials.C4WriteYourFirstComposeApp"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
         <activity
-            android:name=".path.oneessentials.JetPackComposeLayoutSix"
+            android:name=".path.oneessentials.C5BasicLayoutsInCompose"
+            android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
+        <activity
+            android:name=".path.oneessentials.C6StateInCompose"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
     </application>
 

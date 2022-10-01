@@ -2,7 +2,6 @@ package com.moonstarit.composetutorial
 
 import android.content.Context
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.Arrangement
@@ -23,8 +22,6 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.moonstarit.composetutorial.path.oneessentials.JetPackComposeBasicsOne
-import com.moonstarit.composetutorial.path.oneessentials.JetpackComposeBasicsFour
 import com.moonstarit.composetutorial.path.oneessentials.StarterPathOne
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
 import kotlinx.coroutines.CoroutineScope
@@ -35,7 +32,6 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeTutorialTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
                     AllButtons(this)
                 }

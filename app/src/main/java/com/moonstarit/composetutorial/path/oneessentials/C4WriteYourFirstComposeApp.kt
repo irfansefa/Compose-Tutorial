@@ -40,7 +40,7 @@ import com.moonstarit.composetutorial.R
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
 
 
-class JetpackComposeBasicsFour : ComponentActivity() {
+class C4WriteYourFirstComposeApp : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,7 +52,7 @@ class JetpackComposeBasicsFour : ComponentActivity() {
     }
 
     companion object {
-        fun createIntent(context: Context) = Intent(context, JetpackComposeBasicsFour::class.java)
+        fun createIntent(context: Context) = Intent(context, C4WriteYourFirstComposeApp::class.java)
     }
 }
 

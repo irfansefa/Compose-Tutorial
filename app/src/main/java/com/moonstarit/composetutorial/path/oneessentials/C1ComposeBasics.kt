@@ -40,12 +40,11 @@ import androidx.compose.ui.unit.dp
 import com.moonstarit.composetutorial.R
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
 
-class JetPackComposeBasicsOne : ComponentActivity() {
+class C1ComposeBasics : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeTutorialTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
                     Conversation(messages = SampleData.conversationSample)
                 }
@@ -54,7 +53,7 @@ class JetPackComposeBasicsOne : ComponentActivity() {
     }
 
     companion object {
-        fun createIntent(context: Context) = Intent(context, JetPackComposeBasicsOne::class.java)
+        fun createIntent(context: Context) = Intent(context, C1ComposeBasics::class.java)
     }
 }
 

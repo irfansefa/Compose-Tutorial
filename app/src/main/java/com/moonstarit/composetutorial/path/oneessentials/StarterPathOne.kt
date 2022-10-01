@@ -26,7 +26,6 @@ class StarterPathOne : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeTutorialTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(color = MaterialTheme.colors.background) {
                     AllButtons(this)
                 }
@@ -55,28 +54,28 @@ fun AllButtons(context: Context) {
             modifier = Modifier.padding(8.dp)
         )
         Button(
-            onClick = {
-                context.startActivity(JetPackComposeBasicsOne.createIntent(context))
-            },
+            onClick = { context.startActivity(C1ComposeBasics.createIntent(context)) },
             modifier = Modifier.padding(8.dp),
         ) {
             Text(text = "01 Tutorial: Jetpack Compose basics")
         }
         Button(
-            onClick = {
-                context.startActivity(JetpackComposeBasicsFour.createIntent(context))
-            },
+            onClick = { context.startActivity(C4WriteYourFirstComposeApp.createIntent(context)) },
             modifier = Modifier.padding(8.dp),
         ) {
-            Text(text = "04 Jetpack Compose basics")
+            Text(text = "03 Write your first Compose App")
         }
         Button(
-            onClick = {
-                context.startActivity(JetPackComposeLayoutSix.createIntent(context))
-            },
+            onClick = { context.startActivity(C5BasicLayoutsInCompose.createIntent(context)) },
             modifier = Modifier.padding(8.dp),
         ) {
-            Text(text = "06 Jetpack Compose Layout")
+            Text(text = "05 Basic Layouts in Compose")
+        }
+        Button(
+            onClick = { context.startActivity(C6StateInCompose.createIntent(context)) },
+            modifier = Modifier.padding(8.dp),
+        ) {
+            Text(text = "06 State in Compose")
         }
     }
 }

@@ -50,7 +50,7 @@ import coil.compose.rememberImagePainter
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
 import kotlinx.coroutines.launch
 
-class JetPackComposeLayoutSix : ComponentActivity() {
+class C5BasicLayoutsInCompose : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -62,7 +62,7 @@ class JetPackComposeLayoutSix : ComponentActivity() {
     }
 
     companion object {
-        fun createIntent(context: Context) = Intent(context, JetPackComposeLayoutSix::class.java)
+        fun createIntent(context: Context) = Intent(context, C5BasicLayoutsInCompose::class.java)
     }
 }
 
