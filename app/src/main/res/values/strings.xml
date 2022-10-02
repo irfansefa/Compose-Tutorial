@@ -3,4 +3,9 @@
     <string name="show_less">Show less</string>
     <string name="show_more">Show more</string>
     <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </string>
+
+    <string name="app_title">Jetnews</string>
+    <string name="top">Top Story</string>
+    <string name="popular">Popular</string>
+    <string name="read_time">%1$d min read</string>
 </resources>

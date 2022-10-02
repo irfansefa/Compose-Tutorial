@@ -5,12 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
+import com.moonstarit.composetutorial.path.oneessentials.c7theming.ui.start.Home
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
 
 /**
@@ -21,11 +17,8 @@ class C7Activity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeTutorialTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colors.background,
-                ) {
-                    C7Screen()
+                Surface {
+                    Home()
                 }
             }
         }
@@ -34,9 +27,4 @@ class C7Activity : ComponentActivity() {
     companion object {
         fun createIntent(context: Context) = Intent(context, C7Activity::class.java)
     }
-}
-
-@Composable
-fun C7Screen() {
-    Text(text = "Compose theming")
 }
