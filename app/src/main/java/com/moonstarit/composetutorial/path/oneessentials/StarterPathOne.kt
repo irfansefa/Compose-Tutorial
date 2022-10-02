@@ -19,6 +19,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.moonstarit.composetutorial.path.oneessentials.c6state.WellnessScreenActivity
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
 
 class StarterPathOne : ComponentActivity() {
@@ -72,7 +73,7 @@ fun AllButtons(context: Context) {
             Text(text = "05 Basic Layouts in Compose")
         }
         Button(
-            onClick = { context.startActivity(C6StateInCompose.createIntent(context)) },
+            onClick = { context.startActivity(WellnessScreenActivity.createIntent(context)) },
             modifier = Modifier.padding(8.dp),
         ) {
             Text(text = "06 State in Compose")

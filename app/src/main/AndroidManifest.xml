@@ -34,7 +34,7 @@
             android:name=".path.oneessentials.C5BasicLayoutsInCompose"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
         <activity
-            android:name=".path.oneessentials.C6StateInCompose"
+            android:name=".path.oneessentials.c6state.WellnessScreenActivity"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
     </application>
 
