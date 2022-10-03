@@ -1,4 +1,4 @@
-package com.moonstarit.composetutorial.path.oneessentials.c7theming.ui.finish.theme
+package com.moonstarit.composetutorial.path.oneessentials.c7theming.ui.start.theme
 
 import androidx.compose.foundation.shape.CutCornerShape
 import androidx.compose.foundation.shape.RoundedCornerShape

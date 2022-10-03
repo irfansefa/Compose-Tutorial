@@ -1,4 +1,4 @@
-package com.moonstarit.composetutorial.path.oneessentials.c7theming.ui.finish.theme
+package com.moonstarit.composetutorial.path.oneessentials.c7theming.ui.start.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
@@ -8,18 +8,12 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import com.moonstarit.composetutorial.R
 
-/**
- * https://fonts.google.com/specimen/Montserrat
- */
 private val Montserrat = FontFamily(
     Font(R.font.montserrat_regular),
     Font(R.font.montserrat_medium, FontWeight.W500),
-    Font(R.font.montserrat_semibold, FontWeight.W600)
+    Font(R.font.montserrat_semibold, FontWeight.W600),
 )
 
-/**
- * https://fonts.google.com/specimen/Domine
- */
 private val Domine = FontFamily(
     Font(R.font.domine_regular),
     Font(R.font.domine_bold, FontWeight.Bold)

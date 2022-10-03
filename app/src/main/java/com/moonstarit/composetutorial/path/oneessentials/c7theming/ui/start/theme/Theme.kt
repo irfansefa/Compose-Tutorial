@@ -1,4 +1,4 @@
-package com.moonstarit.composetutorial.path.oneessentials.c7theming.ui.finish.theme
+package com.moonstarit.composetutorial.path.oneessentials.c7theming.ui.start.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
@@ -29,7 +29,7 @@ private val DarkColors = darkColors(
 @Composable
 fun JetnewsTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    content: @Composable () -> Unit
+    content: @Composable () -> Unit,
 ) {
     MaterialTheme(
         colors = if (darkTheme) DarkColors else LightColors,
