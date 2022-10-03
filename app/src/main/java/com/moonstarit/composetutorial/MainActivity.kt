@@ -1,5 +1,6 @@
 package com.moonstarit.composetutorial
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -22,6 +23,7 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.moonstarit.animationlab.StartAnimationLab
 import com.moonstarit.composetutorial.path.oneessentials.StarterPathOne
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
 import kotlinx.coroutines.CoroutineScope
@@ -40,6 +42,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun AllButtons(context: Context) {
     val scaffoldState = rememberScaffoldState()
@@ -66,7 +69,7 @@ fun AllButtons(context: Context) {
             }
             Button(
                 onClick = {
-                    showSnackbar("Path 2 not started!", coroutineScope, scaffoldState)
+                    context.startActivity(StartAnimationLab.createIntent(context))
                 },
                 modifier = Modifier.padding(8.dp),
             ) {

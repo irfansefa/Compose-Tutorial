@@ -39,6 +39,9 @@
         <activity
             android:name=".path.oneessentials.c7theming.C7Activity"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
+        <activity
+            android:name="com.moonstarit.animationlab.StartAnimationLab"
+            android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
     </application>
 
 </manifest>
