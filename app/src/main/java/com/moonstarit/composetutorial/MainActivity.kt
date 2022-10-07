@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import com.moonstarit.animationlab.StartAnimationLab
 import com.moonstarit.composetutorial.path.oneessentials.StarterPathOne
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
+import com.moonstarit.navigationlab.StartNavigationActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 
@@ -77,11 +78,19 @@ fun AllButtons(context: Context) {
             }
             Button(
                 onClick = {
-                    showSnackbar("Path 3 not started!", coroutineScope, scaffoldState)
+                    context.startActivity(StartNavigationActivity.createIntent(context))
                 },
                 modifier = Modifier.padding(8.dp),
             ) {
-                Text(text = "Path 3: Architecture and State")
+                Text(text = "Path 3: Architecture and State: Navigation")
+            }
+            Button(
+                onClick = {
+                    showSnackbar("Path 4 not started!", coroutineScope, scaffoldState)
+                },
+                modifier = Modifier.padding(8.dp),
+            ) {
+                Text(text = "Path 4: Accessibility, testing, and performance")
             }
         }
     }
