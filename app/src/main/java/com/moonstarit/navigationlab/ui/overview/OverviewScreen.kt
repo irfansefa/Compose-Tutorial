@@ -1,5 +1,11 @@
 package com.moonstarit.navigationlab.ui.overview
 
+import androidx.compose.animation.core.RepeatMode
+import androidx.compose.animation.core.VectorConverter
+import androidx.compose.animation.core.animateValue
+import androidx.compose.animation.core.infiniteRepeatable
+import androidx.compose.animation.core.rememberInfiniteTransition
+import androidx.compose.animation.core.tween
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
@@ -32,6 +38,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.semantics.clearAndSetSemantics
 import androidx.compose.ui.semantics.contentDescription
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import com.moonstarit.composetutorial.R
 import com.moonstarit.navigationlab.data.UserData
@@ -85,7 +92,19 @@ private fun AlertCard() {
             buttonText = "Dismiss".uppercase(Locale.getDefault())
         )
     }
-    Card {
+
+    val infiniteElevationAnimation = rememberInfiniteTransition()
+    val animatedElevation: Dp by infiniteElevationAnimation.animateValue(
+        initialValue = 1.dp,
+        targetValue = 8.dp,
+        typeConverter = Dp.VectorConverter,
+        animationSpec = infiniteRepeatable(
+            animation = tween(500),
+            repeatMode = RepeatMode.Reverse
+        )
+    )
+
+    Card(elevation = animatedElevation) {
         Column {
             AlertHeader {
                 showDialog = true

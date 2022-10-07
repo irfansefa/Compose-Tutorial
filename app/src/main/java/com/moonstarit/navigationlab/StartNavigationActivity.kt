@@ -12,7 +12,7 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
-import com.moonstarit.navigationlab.ui.components.RallyTabRow
+import com.moonstarit.navigationlab.ui.components.RallyTopAppBar
 import com.moonstarit.navigationlab.ui.theme.RallyTheme
 
 class StartNavigationActivity : ComponentActivity() {
@@ -39,7 +39,7 @@ fun RallyApp() {
             rallyTabRowScreens.find { it.route == currentDestination?.route } ?: Overview
         Scaffold(
             topBar = {
-                RallyTabRow(
+                RallyTopAppBar(
                     allScreens = rallyTabRowScreens,
                     onTabSelected = { screen -> navController.navigateSingleTopTo(screen.route) },
                     currentScreen = currentScreen

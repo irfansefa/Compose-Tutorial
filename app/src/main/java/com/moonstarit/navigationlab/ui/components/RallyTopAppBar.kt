@@ -34,7 +34,7 @@ import java.util.Locale
 
 
 @Composable
-fun RallyTabRow(
+fun RallyTopAppBar(
     allScreens: List<RallyDestination>,
     onTabSelected: (RallyDestination) -> Unit,
     currentScreen: RallyDestination
