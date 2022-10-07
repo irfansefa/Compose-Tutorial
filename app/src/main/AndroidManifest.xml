@@ -17,7 +17,6 @@
             android:theme="@style/Theme.ComposeTutorial.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -44,7 +43,21 @@
             android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
         <activity
             android:name="com.moonstarit.navigationlab.StartNavigationActivity"
-            android:theme="@style/Theme.ComposeTutorial.NoActionBar" />
+            android:exported="true"
+            android:theme="@style/Theme.ComposeTutorial.NoActionBar">
+
+            <!-- Deep link support-->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="single_account"
+                    android:scheme="rally" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
