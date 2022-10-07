@@ -1,6 +1,5 @@
 package com.moonstarit.composetutorial
 
-import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -22,6 +21,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import com.moonstarit.animationlab.StartAnimationLab
 import com.moonstarit.composetutorial.path.oneessentials.StarterPathOne
@@ -36,24 +36,24 @@ class MainActivity : ComponentActivity() {
         setContent {
             ComposeTutorialTheme {
                 Surface(color = MaterialTheme.colors.background) {
-                    AllButtons(this)
+                    AllButtons()
                 }
             }
         }
     }
 }
 
-@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
-fun AllButtons(context: Context) {
+fun AllButtons(context: Context = LocalContext.current) {
     val scaffoldState = rememberScaffoldState()
     val coroutineScope = rememberCoroutineScope()
     Scaffold(
         scaffoldState = scaffoldState
-    ) {
+    ) { innerPadding ->
         Column(
             modifier = Modifier
                 .padding(all = 8.dp)
+                .padding(innerPadding)
                 .fillMaxWidth()
                 .fillMaxHeight(),
             verticalArrangement = Arrangement.Center,
