@@ -30,4 +30,36 @@ class NavigationTest {
             .onNodeWithContentDescription("Overview Screen")
             .assertIsDisplayed()
     }
+
+    @Test
+    fun rallyNavHost_verifyNavigateToAccountsScreen() {
+        composeTestRule.setContent {
+            navController = TestNavHostController(LocalContext.current)
+            navController.navigatorProvider.addNavigator(
+                ComposeNavigator()
+            )
+            RallyNavHost(navController = navController)
+            navController.navigate(Accounts.route)
+        }
+
+        composeTestRule
+            .onNodeWithContentDescription("Accounts Screen")
+            .assertIsDisplayed()
+    }
+
+    @Test
+    fun rallyNavHost_verifyNavigateToBillsScreen() {
+        composeTestRule.setContent {
+            navController = TestNavHostController(LocalContext.current)
+            navController.navigatorProvider.addNavigator(
+                ComposeNavigator()
+            )
+            RallyNavHost(navController = navController)
+            navController.navigate(Bills.route)
+        }
+
+        composeTestRule
+            .onNodeWithContentDescription("Bills")
+            .assertIsDisplayed()
+    }
 }
