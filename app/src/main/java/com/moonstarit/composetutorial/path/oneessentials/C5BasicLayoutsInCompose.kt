@@ -46,7 +46,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import coil.compose.rememberImagePainter
+import coil.compose.rememberAsyncImagePainter
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
 import kotlinx.coroutines.launch
 
@@ -193,8 +193,8 @@ fun ImageListItem(index: Int) {
     Row(verticalAlignment = Alignment.CenterVertically) {
 
         Image(
-            painter = rememberImagePainter(
-                data = "https://developer.android.com/images/brand/Android_Robot.png"
+            painter = rememberAsyncImagePainter(
+                model = "https://developer.android.com/images/brand/Android_Robot.png"
             ),
             contentDescription = "Android Logo",
             modifier = Modifier.size(50.dp)
