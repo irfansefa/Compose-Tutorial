@@ -26,6 +26,7 @@ import androidx.compose.ui.unit.dp
 import com.moonstarit.animationlab.StartAnimationLab
 import com.moonstarit.composetutorial.path.oneessentials.StarterPathOne
 import com.moonstarit.composetutorial.ui.theme.ComposeTutorialTheme
+import com.moonstarit.navigation.NavigationActivity
 import com.moonstarit.navigationlab.StartNavigationActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
@@ -91,6 +92,14 @@ fun AllButtons(context: Context = LocalContext.current) {
                 modifier = Modifier.padding(8.dp),
             ) {
                 Text(text = "Path 4: Accessibility, testing, and performance")
+            }
+            Button(
+                onClick = {
+                    context.startActivity(NavigationActivity.createIntent(context))
+                },
+                modifier = Modifier.padding(8.dp),
+            ) {
+                Text(text = "Navigation Example")
             }
         }
     }

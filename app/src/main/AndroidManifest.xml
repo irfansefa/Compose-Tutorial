@@ -12,11 +12,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ComposeTutorial">
         <activity
+            android:name="com.moonstarit.navigation.NavigationActivity"
+            android:exported="false"
+            android:label="@string/title_activity_navigation"
+            android:theme="@style/Theme.ComposeTutorial.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -46,7 +56,7 @@
             android:exported="true"
             android:theme="@style/Theme.ComposeTutorial.NoActionBar">
 
-            <!-- Deep link support-->
+            <!-- Deep link support -->
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
